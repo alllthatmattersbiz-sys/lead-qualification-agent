@@ -1,0 +1,38 @@
+Initial---
+
+Search Twitter for: "hiring", "looking for", "#ForHire"
+Search Reddit: r/forhire, r/slavelabour
+    ↓
+Extract: Name, Problem, Contact
+    ↓
+Claude qualifies
+    ↓
+Auto-draft email
+    ↓
+Google Sheets
+
+
+-----------
+
+Twitter - paid ( so, not now)
+Reddit - submitted ticket 
+
+-----------
+
+New---
+
+lead-qualification-agent/
+├── app.py                  (main UI)
+├── sources/
+│   ├── hackernews.py      (HN scraper)
+│   ├── devto.py           (Dev.to RSS)
+│   ├── github.py          (GitHub Issues)
+│   ├── reddit.py          (Reddit - waiting for approval)
+│   └── __init__.py
+├── processors/
+│   ├── claude_qualifier.py (Claude scoring)
+│   ├── sheets_handler.py   (Google Sheets)
+│   └── __init__.py
+├── .env
+├── requirements.txt
+└── google_credentials.json
