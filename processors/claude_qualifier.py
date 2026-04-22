@@ -4,8 +4,8 @@ import json
 import requests
 import re
 
-load_dotenv()
 
+# Just get the API key directly
 API_KEY = os.getenv('ANTHROPIC_API_KEY')
 
 
